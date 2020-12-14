@@ -12,7 +12,7 @@ const getTileData = () => {
 getTileData();
 
 // getTileData();
-›
+
 // document.body.onload = addElement;
 
 // function addElement() {
