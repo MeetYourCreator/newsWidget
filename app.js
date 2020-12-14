@@ -4,7 +4,10 @@ const getTileData = () => {
     .then(response => response.json())
     .then(data => {
       console.log(data.list);
-      document.getElementById('container').innerHTML = data.list;
+      document.getElementById('container').innerHTML = data.list.map(tile => {
+        console.log('hello');
+        return tile
+      })
 
     })
 }
