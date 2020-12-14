@@ -18,6 +18,7 @@ const getTileData = async () => {
 getTileData();
 
 document.body.onload = addElement;
+
 function addElement() {
   // create a new div element 
   const newDiv = document.createElement("div");
