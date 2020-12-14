@@ -4,17 +4,31 @@ const getTileData = () => {
     .then(response => response.json())
     .then(data => {
       console.log(data.list);
-      let newDiv = document.getElementById('container')
-      
-        innerHTML = data.list.map(tile => {
-        console.log('hello');
-        return tile
+      const containerDiv = document.getElementById('container');
+      const tileData =
+      data.list.map(tile => {
+        console.log('yes')
+        document.createElement('div');
+        tile.innerHTML = `
+          <div class='tile-container'>
+          <img
+          src=${tile.thumbnail[0].url}
+          class='images'>
+          <p>${tile.name}</p>
+          <p>${tile.categories[0]}</p>
+          <p>${tile.branding}</p>
+          </div>
+        `
+       
       })
-
+     
+      containerDiv.append(tileData)
     })
+  
 }
 
 getTileData();
+
 
 // getTileData();
 
