@@ -18,6 +18,7 @@ const renderTiles = () => {
           </div>
         `
     containerDiv.appendChild(section)
+    
   })
 }
 
