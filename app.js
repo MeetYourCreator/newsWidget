@@ -27,10 +27,10 @@ const fetchTileData =  () => {
   fetch("https://api.nytimes.com/svc/news/v3/content/all/all.json?api-key=RB52gKxhAGBULNNMAs5gXARnnimLsKMn")
     .then(response => {
       
-      return response
+      return response.json()
     })
-    .then(response => {
-      tiles = response.json()
+    .then(results => {
+      tiles = results
       console.log(tiles)
       // renderTiles()
     })
