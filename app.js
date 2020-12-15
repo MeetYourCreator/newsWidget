@@ -22,13 +22,17 @@ const renderTiles = () => {
 }
 
 //function that handles the API call
-const fetchTileData = async () => {
+const fetchTileData =  () => {
 
-  await fetch("https://api.nytimes.com/svc/news/v3/content/all/all.json?api-key=RB52gKxhAGBULNNMAs5gXARnnimLsKMn")
-    .then(response => response.json())
-    .then(results => {
-      tiles = results
-      renderTiles()
+  fetch("https://api.nytimes.com/svc/news/v3/content/all/all.json?api-key=RB52gKxhAGBULNNMAs5gXARnnimLsKMn")
+    .then(response => {
+      
+      return response
+    })
+    .then(response => {
+      tiles = response.json()
+      console.log(tiles)
+      // renderTiles()
     })
 }
 
