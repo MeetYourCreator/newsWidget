@@ -10,11 +10,10 @@ const renderTiles = () => {
     section.innerHTML = `
           <div class='tile-container'>
           <img
-          src='${tile.thumbnail[0].url}'
+          src='${tile.thumbnail_standard}'
           class='thumbnail'>
-          <p>${tile.name}</p>
-          <p>${tile.categories[0]}</p>
-          <p>${tile.branding}</p>
+          <p>${tile.title}</p>
+          <p>${tile.abstract}</p>
           </div>
         `
     containerDiv.appendChild(section)
@@ -25,10 +24,10 @@ const renderTiles = () => {
 //function that handles the API call
 const fetchTileData = async () => {
 
-  await fetch("https://api.taboola.com/1.2/json/apitestaccount/recommendations.get?app.type=web&app.apikey=7be65fc78e52c11727793f68b06d782cff9ede3c&source.id=%2Fdigiday-publishing-summit%2F&source.url=https%3A%2F%2Fblog.taboola.com%2Fdigiday-publishing-summit%2F&source.type=text&placement.organic-type=mix&placement.visible=true&placement.available=true&placement.rec-count=6&placement.name=Below%20Article%20Thumbnails&placement.thumbnail.width=640&placement.thumbnail.height=480&user.session=init")
+  await fetch("https://api.nytimes.com/svc/news/v3/content/all/all.json?api-key=RB52gKxhAGBULNNMAs5gXARnnimLsKMn")
     .then(response => response.json())
-    .then(data => {
-      tiles = data.list
+    .then(results => {
+      tiles = results
       renderTiles()
     })
 }
