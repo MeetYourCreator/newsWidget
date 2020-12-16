@@ -8,7 +8,6 @@ const renderTiles = () => {
   tiles.map(tile => {
     const section = document.createElement('section');
     section.innerHTML = `
-          <div class='tile-container'>
           <img
           src='${tile.multimedia[2].url}'
           class='thumbnail'>

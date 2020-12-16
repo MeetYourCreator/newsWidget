@@ -1,5 +1,21 @@
-.container {
+body {
+
 display: flex;
+justify-content: space-evenly;
+}
+
+#container {
+display: flex;
+justify-content: center;
 
 
 }
+
+section {
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+
+
+
