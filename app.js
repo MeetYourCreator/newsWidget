@@ -8,12 +8,14 @@ const renderTiles = () => {
   tiles.map(tile => {
     const section = document.createElement('section');
     section.innerHTML = `
+          <a href='${tile.url}'>
           <img
           src='${tile.multimedia[2].url}'
           class='thumbnail'>
           <p class='caption'>${tile.multimedia[2].caption}</p>
+          <p class='title'>${tile.title}</p>
           <p class='abstract'>${tile.abstract}</p>
-          </div>
+          </a>
         `
     containerDiv.appendChild(section)
     

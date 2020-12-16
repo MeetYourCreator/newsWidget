@@ -6,6 +6,7 @@ justify-content: space-evenly;
 
 #container {
 display: flex;
+align-items: baseline;
 justify-content: center;
 
 
@@ -15,6 +16,27 @@ section {
 display: flex;
 flex-direction: column;
 justify-content: center;
+margin: 0px 10px 0px 10px;
+}
+
+section a, a:visited, a:hover, a:active, a:focus {
+  outline: none;
+  text-decoration: none;
+  color: black;
+}
+.thumbanil {
+
+
+}
+
+.caption {
+margin-left: 10px;
+margin-right: 5px;
+font-size: 11px;
+}
+
+.abstract {
+font-size: 15px;
 }
 
 
