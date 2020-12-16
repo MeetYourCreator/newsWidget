@@ -12,8 +12,8 @@ const renderTiles = () => {
           <img
           src='${tile.multimedia[2].url}'
           class='thumbnail'>
-          <p>${tile.multimedia[2].caption}</p>
-          <p>${tile.abstract}</p>
+          <p class='caption'>${tile.multimedia[2].caption}</p>
+          <p class='abstract'>${tile.abstract}</p>
           </div>
         `
     containerDiv.appendChild(section)
