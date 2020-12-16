@@ -10,9 +10,9 @@ const renderTiles = () => {
     section.innerHTML = `
           <div class='tile-container'>
           <img
-          src='${tile.thumbnail_standard}'
+          src='${tile.multimedia[2].url}'
           class='thumbnail'>
-          <p>${tile.title}</p>
+          <p>${tile.multimedia[2].caption}</p>
           <p>${tile.abstract}</p>
           </div>
         `
