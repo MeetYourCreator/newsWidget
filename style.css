@@ -30,13 +30,23 @@ section a, a:visited, a:hover, a:active, a:focus {
 }
 
 .caption {
-margin-left: 10px;
+margin-top: 0px;
 margin-right: 5px;
+margin-left: 10px;
 font-size: 11px;
 }
 
-.abstract {
+.title {
+margin-right: 5px;
+margin-left: 10px;
 font-size: 15px;
+font-weight: 600;
+}
+
+.abstract {
+margin-right: 5px;
+margin-left: 10px;
+font-size: 12px;
 }
 
 
