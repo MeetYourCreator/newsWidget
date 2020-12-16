@@ -5,8 +5,7 @@ const renderTiles = () => {
 
   const containerDiv = document.getElementById('container');
 
-  //since the tiles variable is an object, and map only works on arrays, use Object.keys to map over the tiles variable
-  Object.keys(tiles).map(tile => {
+  tiles.map(tile => {
     const section = document.createElement('section');
     section.innerHTML = `
           <div class='tile-container'>
@@ -35,8 +34,6 @@ const fetchTileData =  async () => {
       console.log(JSON.stringify(data.results));
       tiles= data.results
       console.table(`Console log tiles variable: ${tiles}`)
-      //typeeof returns that the tiles variable is an object
-      console.log(typeof tiles)
       
       renderTiles()
     })
