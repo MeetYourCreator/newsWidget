@@ -1,7 +1,8 @@
 body {
+display: flex;
+align-items: baseline;
+justify-content: space-evenly;
 
-display: grid;
-align-items: center;
 
 }
 
@@ -13,10 +14,8 @@ border-bottom: 2px solid grey;
 
 
 #section-container {
-display: flex;
-
-align-items: baseline;
-justify-content: space-evenly;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
 
 
 }
