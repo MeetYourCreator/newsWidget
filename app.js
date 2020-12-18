@@ -5,7 +5,7 @@ let tiles;
 //function that handles rendering data from API response
 const renderTiles = () => {
 
-  const containerDiv = document.getElementById('container');
+  const containerDiv = document.getElementById('section-container');
 
   tiles.map(tile => {
     const section = document.createElement('section');
