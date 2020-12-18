@@ -15,7 +15,6 @@ const renderTiles = () => {
           src='${tile.thumbnail_standard}'
           class='thumbnail'>
           <p class='title'>${tile.title}</p>
-          <p class='abstract'>${tile.abstract}</p>
           </a>
         `
       containerDiv.appendChild(section)
