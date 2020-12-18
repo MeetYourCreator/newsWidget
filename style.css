@@ -1,12 +1,12 @@
 body {
 
 display: grid;
-
-align-items: center;
+align-items: center
 }
 
 #container {
 display: flex;
+
 align-items: baseline;
 justify-content: space-evenly;
 
@@ -17,7 +17,8 @@ section {
 display: flex;
 flex-direction: column;
 justify-content: center;
-margin: 0px 10px 0px 10px;
+border-right: 2px solid grey;
+margin: 0px 5px 0px 5px;
 }
 
 section a, a:visited, a:hover, a:active, a:focus {
