@@ -1,13 +1,14 @@
 body {
 
-display: flex;
-justify-content: space-evenly;
+display: grid;
+
+align-items: center;
 }
 
 #container {
 display: flex;
 align-items: baseline;
-justify-content: center;
+justify-content: space-evenly;
 
 
 }
