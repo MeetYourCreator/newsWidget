@@ -4,9 +4,9 @@ let tiles;
 
 //function that handles rendering data from API response
 const renderTiles = () => {
-
+ 
   const containerDiv = document.getElementById('section-container');
-
+  
   tiles.map(tile => {
     const section = document.createElement('section');
     section.innerHTML = `
@@ -18,9 +18,10 @@ const renderTiles = () => {
           <p class='abstract'>${tile.abstract}</p>
           </a>
         `
-    containerDiv.appendChild(section)
+      containerDiv.appendChild(section)
     
-  })
+    })
+  
 }
 
 //function that handles the API call
