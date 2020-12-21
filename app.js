@@ -12,6 +12,7 @@ const renderTiles = () => {
       const section = document.createElement('section');
       section.innerHTML = `
           <a href='${tile.url}'>
+          <h4 class='section'>${tile.section}</h4>
           <img
           src='${tile.thumbnail_standard}'
           class='thumbnail'>

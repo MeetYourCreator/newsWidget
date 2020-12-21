@@ -35,6 +35,12 @@ a:focus {
   color: black;
 }
 
+.section {
+font-size: 20px;
+margin-top: 5px;
+margin-bottom: 10PX;
+}
+
 img {
   width: 95px;
 }
