@@ -8,7 +8,7 @@ const renderTiles = () => {
   
   tiles.map(tile => {
     console.log(tile.section)
-    if (tile.section !== 'Arts' && tile.section !== 'Multimedia/Photos') {
+    if (tile.section !== 'Arts' && tile.section !== 'Multimedia/Photos' && tile.thumbnail_standard !== undefined) {
       const section = document.createElement('section');
       section.innerHTML = `
           <a href='${tile.url}'>
