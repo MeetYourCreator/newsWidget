@@ -19,7 +19,6 @@ grid-template-columns: 1fr 1fr 1fr;
 
 
 }
-
 section {
 display: flex;
 flex-direction: column;
