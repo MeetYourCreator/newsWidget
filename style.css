@@ -1,64 +1,60 @@
 body {
-display: flex;
-align-items: baseline;
-justify-content: space-evenly;
-
-
+  display: flex;
+  align-items: baseline;
+  justify-content: space-evenly;
 }
 
 #container-title {
-font-size: 25px;
-padding-bottom: 10px;
-border-bottom: 2px solid grey;
+  font-size: 25px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid grey;
 }
-
 
 #section-container {
-display: grid;
-grid-template-columns: 1fr 1fr 1fr;
-
-
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
+
 section {
-display: flex;
-flex-direction: column;
-justify-content: center;
-padding-right: 2px;
-border-right: 2px solid grey;
-border-bottom: 2px solid grey;
-margin: 10px 5px 0px 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 2px;
+  border-right: 2px solid grey;
+  border-bottom: 2px solid grey;
+  margin: 10px 5px 0px 5px;
 }
 
-section a, a:visited, a:hover, a:active, a:focus {
+section a,
+a:visited,
+a:hover,
+a:active,
+a:focus {
   outline: none;
   text-decoration: none;
   color: black;
 }
 
 img {
-
-width: 95px;
+  width: 95px;
 }
 
 .caption {
-margin-top: 0px;
-margin-right: 5px;
-margin-left: 10px;
-font-size: 11px;
+  margin-top: 0px;
+  margin-right: 5px;
+  margin-left: 10px;
+  font-size: 11px;
 }
 
 .title {
-margin-right: 5px;
-margin-left: 10px;
-font-size: 12px;
-font-weight: 600;
+  margin-right: 5px;
+  margin-left: 10px;
+  font-size: 12px;
+  font-weight: 600;
 }
 
 .abstract {
-margin-right: 5px;
-margin-left: 10px;
-font-size: 9px;
+  margin-right: 5px;
+  margin-left: 10px;
+  font-size: 9px;
 }
-
-
-
