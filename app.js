@@ -4,12 +4,13 @@ let tiles;
 
 //function that handles rendering data from API response
 const renderTiles = () => {
- 
   const containerDiv = document.getElementById('section-container');
   
   tiles.map(tile => {
-    const section = document.createElement('section');
-    section.innerHTML = `
+    console.log(tile.section)
+    if (tile.section !== 'Arts' && tile.section !== 'Multimedia/Photos') {
+      const section = document.createElement('section');
+      section.innerHTML = `
           <a href='${tile.url}'>
           <img
           src='${tile.thumbnail_standard}'
@@ -19,7 +20,7 @@ const renderTiles = () => {
           </a>
         `
       containerDiv.appendChild(section)
-    
+    }
     })
   
 }
@@ -36,8 +37,7 @@ const fetchTileData = async () => {
     .then(data => {
       console.log(JSON.stringify(data.results));
       tiles = data.results
-      console.table(`Console log tiles variable: ${tiles}`)
-      console.table(`Console log multimedia variable: ${tiles.multimedia}`)
+      console.log(tiles)
       renderTiles()
     })
 }
