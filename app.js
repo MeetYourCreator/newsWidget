@@ -14,6 +14,7 @@ const renderTiles = () => {
           <img
           src='${tile.thumbnail_standard}'
           class='thumbnail'>
+          <p class='source'>${tile.source}</p>
           <p class='title'>${tile.title}</p>
           </a>
         `

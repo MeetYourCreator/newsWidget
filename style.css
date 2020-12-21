@@ -39,6 +39,11 @@ img {
   width: 95px;
 }
 
+.source {
+font-size: 8px;
+margin-top: 0px;
+}
+
 .caption {
   margin-top: 0px;
   margin-right: 5px;
