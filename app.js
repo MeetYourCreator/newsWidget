@@ -5,7 +5,7 @@ let tiles;
 //function that handles rendering data from API response
 const renderTiles = () => {
   const containerDiv = document.getElementById('section-container');
-  
+
   tiles.map(tile => {
     console.log(tile.section)
     if (tile.section !== 'Arts' && tile.section !== 'Multimedia/Photos' && tile.thumbnail_standard !== undefined) {
@@ -21,9 +21,8 @@ const renderTiles = () => {
           </a>
         `
       containerDiv.appendChild(section)
-    }
-    })
-  
+    }})
+
 }
 
 //function that handles the API call
