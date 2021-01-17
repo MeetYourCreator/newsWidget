@@ -1,7 +1,5 @@
 let tiles;
 
-
-
 //function that handles rendering data from API response
 const renderTiles = () => {
   const containerDiv = document.getElementById('section-container');
