@@ -1,6 +1,6 @@
 # New York Times News Widget
 
-No libraries. No modules. No frameworks. 100% vanilla JavaScript/HTML/CSS news widget employing NYT 'Times Wire API' to retrieve up-to-the-minute stream of nytimes articles.
+No libraries. No modules. No frameworks. 100% vanilla JavaScript/HTML/CSS news widget employing NYT 'Times Wire API' to retrieve up-to-the-minute stream of New York Times articles.
 ## [View Application](https://nyt-news-widget.netlify.app/)
 
 
